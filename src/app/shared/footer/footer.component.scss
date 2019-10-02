@@ -1,0 +1,106 @@
+.bg-footer {
+    background-color: #2d333e;
+    padding: 30px 0px;
+    color: white;
+    font-family: "Montserrat";
+    margin-top: 20px;
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+    font-family: "Montserrat";
+    font-size: 12px;
+  }
+  span {
+    font-size: 12px;
+    color: white;
+  }
+  
+  .follow-us {
+    font-size: 33px;
+    font-weight: bold;
+    font-family: "Montserrat";
+  }
+  
+  .central-atendimento{
+      font-size: 14px;
+    //font-weight: bold;
+    font-family: "Montserrat";
+  }
+  
+  .encontre-sebrae{
+      font-size: 18px;
+    font-weight: bold;
+    font-family: "Montserrat";
+    margin: 5px 0px;
+  }
+  
+  .phone {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin: 15px 0px;
+    span {
+      font-size: 32px;
+    }
+  }
+  
+  .justify-headers .mat-expansion-panel-header-title,
+  .justify-headers .mat-expansion-panel-header-description {
+    flex-basis: 0;
+    align-self: center;
+  }
+  
+  .justify-headers .mat-expansion-panel-header-description {
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .bg-grey {
+    background-color: #2e3241;
+  }
+  
+  .fast-access-content {
+    color: white;
+    font-size: 16px;
+    font-family: "Montserrat";
+  }
+  .bold {
+    font-weight: bold;
+  }
+  
+  mat-expansion-panel {
+    background-color: #2e3241;
+    .mat-expansion-panel-header-title {
+      color: white;
+    }
+  }
+  
+  .icon-box {
+    display: inline-table;
+    table-layout: fixed;
+    width: auto;
+    text-align: center;
+    vertical-align: bottom;
+    margin-top: 0px !important;
+    padding-left: 9px;
+    padding-right: 9px;
+  }
+  
+  .icons-lead i {
+      color: #007ac2;
+      background: #F6F6F6;
+      border-radius: 50%;
+      //width: 34px;
+      padding: 10px 16px;
+      display: inline;
+      font-size: 24px;
+   }
+  
+   .desktop-padding{
+    padding:64px 0px;
+   }
+  
+  
+  

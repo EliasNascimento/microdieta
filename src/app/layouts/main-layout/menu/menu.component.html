@@ -1,0 +1,84 @@
+<!-- <div fxLayout="row" fxLayoutAlign="space-between center" class="header">
+    <mat-sidenav-container fxLayout="row">
+         <mat-sidenav #sidenav role="navigation" style="background-color: #007AC2">
+        <mat-nav-list (click)="sidenav.close()">
+            <mat-list-item fxLayoutAlign="center center">
+                <div><a routerLink="/"><img
+                            src="https://placeholder.com/wp-content/uploads/2018/10/placeholder.com-logo1.png"
+                            class="logo-img"></a></div>
+            </mat-list-item>
+            <div>
+                <a mat-list-item (click)="scrollTo('sobre')">
+                    <span class="nav-caption">SOBRE</span>
+                </a>
+                <a mat-list-item (click)="scrollTo('mercado')">
+                    <span class="nav-caption">O MERCADO</span>
+                </a>
+                <a mat-list-item (click)="scrollTo('especiais')">
+                    <span class="nav-caption">ESPECIAIS</span>
+                </a>
+                <a mat-list-item (click)="scrollTo('curiosidades')">
+                    <span class="nav-caption">CURIOSIDADES</span>
+                </a>
+                <a mat-list-item (click)="scrollTo('parceiros')">
+                    <span class="nav-caption">PARCEIROS</span>
+                </a>
+            </div>
+        </mat-nav-list>
+    </mat-sidenav> 
+        <mat-sidenav-content fxLayout="row">
+            <div fxHide.gt-sm>
+                 <button mat-icon-button (click)="sidenav.toggle()">
+                    <mat-icon style="color: white">menu</mat-icon>
+                </button> 
+            </div>
+            <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px">
+                <a routerLink="/">
+                    <img src="../assets/images/logo.png" class="logo-img">
+                </a>
+                <div fxLayoutGap="10px" fxHide.lt-md>
+                    <button mat-button (click)="scrollTo('saude')">SAÚDE</button>
+                    <button mat-button (click)="scrollTo('dietas')">DIETAS</button>
+                    <button mat-button (click)="scrollTo('ebook')">EBOOK</button>
+                    <button mat-button (click)="scrollTo('dicas')">DICAS</button>
+                </div>
+            </div>
+            <main>
+                <router-outlet></router-outlet>
+            </main>
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+</div> -->
+<div fxLayout="row" fxLayoutAlign="space-between center" class="header">
+    <mat-toolbar fxLayout fxLayoutAlign="start center" fxLayoutGap="20px" class="header">
+        <div fxHide.gt-sm>
+            <button mat-icon-button (click)="opened = !opened">
+                <mat-icon>menu</mat-icon>
+            </button>
+        </div>
+        <a routerLink="/" style="padding-left: 30px;">
+            <img src="../assets/images/logo.png" class="logo-img">
+        </a>
+        <div fxLayout fxLayoutGap="20px" fxLayoutAlign="space-between center" fxHide.lt-md>
+            <button mat-button (click)="scrollTo('saude')">SAÚDE</button>
+            <button mat-button (click)="scrollTo('dietas')">DIETAS</button>
+            <button mat-button (click)="scrollTo('ebook')">EBOOK</button>
+            <button mat-button (click)="scrollTo('dicas')">DICAS</button>
+        </div>
+    </mat-toolbar>
+</div>
+<div fxLayout="row" fxLayoutAlign="space-between center">
+    <mat-sidenav-container class="main-sidenav-container" (backdropClick)="opened = !opened">
+        <mat-sidenav [mode]="mode" [opened]="opened" [fixedInViewport]="true" [fixedTopGap]="layoutGap">
+            <div fxLayoutGap="10px" fxHide.lt-md>
+                <button mat-button (click)="scrollTo('saude')">SAÚDE</button>
+                <button mat-button (click)="scrollTo('dietas')">DIETAS</button>
+                <button mat-button (click)="scrollTo('ebook')">EBOOK</button>
+                <button mat-button (click)="scrollTo('dicas')">DICAS</button>
+            </div>
+        </mat-sidenav>
+        <main>
+            <router-outlet></router-outlet>
+        </main>
+    </mat-sidenav-container>
+</div>
