@@ -1,0 +1,167 @@
+
+
+body {
+    margin: 0;
+    font-family: "Montserrat" !important;
+    background-color: #F8F8F8;
+  }
+  
+  .title{
+    font-size: 34px;
+    
+  }
+  
+  .title-info{
+    font-family: "Montserrat";
+    font-size: 20px;
+    color: #FE0142;
+  }
+  
+  .subtitle{
+    font-family: "Montserrat";
+    font-size: 24px;
+  }
+  .dash-title-filter{
+    font-family: "Montserrat";
+    font-size: 20px;
+    color: #FE0142;
+  }
+  .dash-title{
+    font-family: "Montserrat";
+    font-size: 24px;
+  }
+  .dash-subtitle{
+    font-family: "Montserrat";
+    font-size: 16px;
+  }
+  
+  .mat-menu-user {
+    background-color: #FE0142;
+    border-radius: 0px !important;
+  }
+  
+  .btn-link {
+    color: rgba(32, 35, 46, 0.55);
+    text-decoration: underline;
+  }
+  
+  .mat-drawer-content{
+      height: 100vh !important;
+  }
+  
+  .primary-color{
+      color: #FE0142;
+  }
+  
+  .btn-info{
+      background-color: #FE0142;
+      color: white;
+      font-weight: bold;
+  }
+  .btn-radius{
+      padding: 2px 50px !important;
+      border-radius: 20px !important;
+  }
+  
+  .text-info{
+      color: #FE0142;
+  }
+  .new-title{
+    color: #FE0142;
+    font-size: 18px;
+  }
+  .upload-info{
+    font-family: "Montserrat";
+    font-size: 12px;
+  }
+  .btn-warning{
+    background-color:#FE0142;
+    color:white;
+  }
+  .mat-radio-button ~ .mat-radio-button {
+    margin-left: 16px;
+  }
+  
+  @for $i from 1 through 40 {
+    .fs-#{$i} {
+      font-size: #{$i}px;
+    }
+  }
+  
+  @for $i from 0 through 5 {
+    .m-#{$i} {
+      margin: #{$i * 1}rem;
+    }
+    .my-#{$i} {
+      margin-top: #{$i * 1}rem;
+      margin-bottom: #{$i * 1}rem;
+    }
+    .mx-#{$i} {
+      margin-left: #{$i * 1}rem;
+      margin-right: #{$i * 1}rem;
+    }
+    .mt-#{$i} {
+      margin-top: #{$i * 1}rem;
+    }
+    .mb-#{$i} {
+      margin-bottom: #{$i * 1}rem;
+    }
+    .ml-#{$i} {
+      margin-left: #{$i * 1}rem;
+    }
+    .mr-#{$i} {
+      margin-right: #{$i * 1}rem;
+    }
+  }
+  
+  @for $i from 0 through 5 {
+    .p-#{$i} {
+      padding: #{$i * 1}rem;
+    }
+    .py-#{$i} {
+      padding-top: #{$i * 1}rem;
+      padding-bottom: #{$i * 1}rem;
+    }
+    .px-#{$i} {
+      padding-left: #{$i * 1}rem;
+      padding-right: #{$i * 1}rem;
+    }
+    .pt-#{$i} {
+      padding-top: #{$i * 1}rem;
+    }
+    .pb-#{$i} {
+      padding-bottom: #{$i * 1}rem;
+    }
+    .pl-#{$i} {
+      padding-left: #{$i * 1}rem;
+    }
+    .pr-#{$i} {
+      padding-right: #{$i * 1}rem;
+    }
+  }
+  
+  .btn-rounded{
+    padding:5px 60px !important;
+    border-radius: 25px !important;
+    
+  }
+  
+  .btn-upload{
+    padding:5px 10px !important;
+    border-radius: 25px !important;
+    font-family: "Montserrat";
+    font-size: 10px;
+    width: 159px;
+    height: 35px;
+  }
+  
+  .btn-back{
+    background-color: #FE0142;
+    color: white;
+    font-weight: bold;
+  }
+  
+  
+  .mat-drawer-container{
+    background-color: #F8F8F8;
+  }
