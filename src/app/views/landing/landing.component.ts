@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
+import { Router } from '@angular/router';
+import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-landing',
@@ -7,9 +9,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router:Router, @Inject(DOCUMENT) private document: Document) { }
 
   ngOnInit() {
   }
+
+  goToUrl2(){
+    this.document.location.href = 'https://hotm.art/o_que_e_dieta_de_21_dias';
+  }
+  goToUrl3(){
+    this.document.location.href = 'https://go.hotmart.com/O16610107O?ap=49ae';
+  }
+  goToUrl4(){
+    this.document.location.href = 'https://go.hotmart.com/O16610107O?ap=b30a';
+  }
+  goToUrl5(){
+    this.document.location.href = 'https://go.hotmart.com/O16610107O?ap=c2c5';
+  }
+  
 
 }
