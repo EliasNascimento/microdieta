@@ -20,6 +20,12 @@ export class MenuComponent implements OnInit {
 
   scrollTo(elementId) {
     this.opened = false;
+    (<any>window).ga('send', 'event', {
+      eventCategory: elementId,
+      eventLabel: 'scrollTo',
+      eventAction: 'scrollTo',
+      eventValue: 10
+    });
     let element = document.getElementById(elementId);
       document.querySelector('.mat-sidenav-content').scrollTo({ top: element.offsetTop, behavior: 'smooth' });
     

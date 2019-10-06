@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -11,9 +11,17 @@ export class AppComponent {
 
   constructor(private router: Router) {
     let path = localStorage.getItem('path');
+
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        (<any>window).ga('set', 'page', event.urlAfterRedirects);
+        (<any>window).ga('send', 'pageview');
+      }
+    });
+
     if(path) {
       localStorage.removeItem('path');
       this.router.navigate([path]);
-    }
+    }    
   }
 }
